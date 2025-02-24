@@ -1,0 +1,377 @@
+body{
+    color:#FC90AF ;
+    font-size: medium;
+    font-family:"Lucida Console", Courier, monospace;
+    font-weight: 500; 
+    background-color: #dfeeff ; 
+    height: 100vh;
+    text-align: center;
+    margin: 0;
+    text-decoration: none;
+    
+	}
+  
+h1 a{
+  color:#FC90AF;
+  font-size: 70px;
+  font-weight: bolder;
+  text-align: center; 
+  text-decoration: none;
+}
+h2{
+  color:#FC90AF;
+  font-size: 60px;
+  font-weight: bolder;
+  text-align: center; 
+  text-decoration: none;
+}
+p{
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  margin: 85px;
+}
+.background-block{
+  background-color:#98bae0 ;
+  padding: 150px;
+  margin: 20px; 
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  gap: 20px;
+  align-items: center;
+  color: #8f61db;
+  text-decoration: none;
+}
+.video iframe{
+  width: 780px; 
+  height: 441px;
+  border-radius: 15px;
+}
+.background-block .text{
+  max-width: 100%;
+}
+.background-block .text a{
+  color: #8f61db;
+  text-decoration: none;
+}
+.container{
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  gap: 20px;
+  align-items: center;
+  padding: 25px;
+  margin: 20px; 
+  width: 100%;
+  
+}
+.text{
+  max-width: 100%;
+  
+}
+.img{
+  display: flex;
+  justify-content: center;
+}
+.img img{
+  width: 260px; 
+  height: 265px;
+  border-radius: 15px;
+  object-fit: cover;
+  
+}
+.background-block .list{
+  max-width: 100%;
+  text-decoration: none;
+  color: #8f61db;
+  font-size: medium;
+
+}
+.background-block .list a{
+  text-decoration: none;
+  color: #8f61db;
+  font-size: 25px;
+  font-weight: bold;
+}
+.background-block .list li{
+  text-decoration: none;
+  color: #8f61db;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+/*===== siedebar ===== */
+.sidebar{
+   position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px;
+    padding: 10px 10px;
+    background:  #FC90AF;
+    transition: width 0.3s ease;  
+    z-index: 1001;
+    
+}
+.sidebar.close{
+  width: 66px;
+  align-items: center;
+}
+/*=====Resuable CSS===== */
+.sidebar .text{
+  font-size: 16px;
+  font-weight: 500;
+  color: #8f61db;
+  transition: opacity 0.3s ease; 
+}
+.sidebar.close .text{
+  opacity: 0;
+}
+
+.sidebar .image{
+  min-width: 60px;
+  display: flex;
+}
+.sidebar li{
+  height: 50px;
+  background:#EDBBCE ;
+  margin-top: 10px;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  border-radius: 6px;
+}
+.sidebar li .icon{
+  min-width: 60px;
+  font-size: 20px;
+}
+.sidebar li .icon,
+.sidebar li .text{
+  color: #8f61db;
+  transition: color 0.3s ease;
+}
+.sidebar header{
+  position: relative;
+}
+.sidebar .image-text img{
+  width: 40px ;
+  border-radius: 20px;
+}
+.sidebar header .image-text{
+  display: flex;
+  align-items: center;
+}
+header .image-text .header-text{
+  display: flex;
+  flex-direction: column;
+}
+  
+header .image-text .header-text{
+  display: flex;
+  flex-direction: column;
+}
+.header-text .name{
+  font-weight: 600;
+}
+.header-text .profession{
+  margin-top: -2px;
+}
+  
+.sidebar header .toggle{
+  position: absolute;
+  top: 50%;
+  right: -25px;
+  transform: translateY(-50%);
+  height: 25px;
+  width: 25px;
+  background: #fc90af;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: #8f61db;
+  font-size: 22px;
+  cursor: pointer;
+}
+.sidebar .search-box{
+  background:#dfeeff ;
+}
+.search-box input{
+  height: 100%;
+  width: 100%;
+  outline: none;
+  border: none;
+  border-radius: 6px;
+  background:#dfeeff ;
+}
+.sidebar li a{
+  height: 100%;
+  width: 100%; 
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: linear;
+}
+.sidebar li a:hover{
+  background: #dfeeff;
+} 
+.sidebar li:hover a.icon,
+.sidebar li:hover a.text{
+  color: #dfeeff;
+}
+
+.carousel-section {
+  position: center;
+  display: flex;
+  align-items: center;
+}
+
+.carousel {
+  display: flex;
+  gap: 16px; 
+  padding: 10px;
+  margin-left: 175px;
+  margin-top: 25px; 
+  
+}
+
+.carousel li {
+  list-style: none;
+  flex-shrink: 0;  
+  width: 250px;    
+  height: 350px;  
+  border-radius: 10px;
+  background-color: #98bae0; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.carousel .card {
+  flex: 0 0 auto;
+  width: 400px; 
+  height: 500px;
+  background-color: #98bae0;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #8f61db;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+  transform: scale(1);
+}
+.carousel .card:hover{
+  transform: scale(1.05);
+  transform: tarnsform 0.3s ease;
+}
+
+.card .img img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 16px; 
+}
+a h3{
+  text-decoration: none;
+  color: #8f61db;
+}
+
+
+/* bloquage du scroll horizontal */
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+a:link{
+  color: #551a8b;
+}
+
+a:hover{
+  color: #551a8b;
+  text-decoration: underline;
+}
+
+
+
+
+/*=====CSS que pour les pages de jeux===== */
+
+/* Header with title and image */
+.header {
+  position: relative;
+  width: 100%;
+  height: 80%; /* Adjust height as needed */
+                                              /*background-image: url('beetle battle.png'); /* Replace with your image URL */
+  background-size: cover;
+  background-position: center;
+}
+
+.header-games {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+  font-size: 2.5rem; /* Adjust size */
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Fade effect for the header */
+.fade {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0), #b0cef0); /* Adjust color as needed */
+}
+
+.zone {
+  width: 100%;
+  padding: 1rem;
+  color: white;
+  text-align: center;
+  letter-spacing: 2px;
+ 
+  line-height: 2em;
+}
+
+.zone p2{
+  color: #fc90af
+}
+
+.zoneA {
+  background-color: #b0cef0;
+}
+.zoneB {
+  background-color: #98bae0;
+}
+
+.zoneP{
+  padding: 25px;
+  position: relative; left: 16px;
+}
+
+.zoneP :hover{
+  transform: scale(1.03);
+  transition: transform 1s ease-in-out; 
+}
+
+.zoneG{
+  background-color: #98bae0;
+  padding: 3rem;
+}
+
+.zoneIFR{
+  background-color: #98bae0;
+  padding: 3rem;
+  position: relative; left: 16px;
+}
